@@ -26,6 +26,7 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 		<style>
 			.font-size {
@@ -58,6 +59,27 @@
 				<div class="container text-light" id="gallery-container">
 					<div class="panel text-center">
 						<h1 class="font-size animated fadeIn slower" style="font-weight: bold; margin-top: 5vh;"><strong>Gallery</strong></h1>
+
+                        <span class="wow fadeInUp">
+						<h3>2020 Golden Gate</h3>
+						<img style="width: 50vw; min-width: 320px;" src="images/ggso2020.jpg"/>
+						</span>
+
+						<br/><br/><br/>
+
+                        <span class="wow fadeInUp">
+						<h3>2020 Aggie</h3>
+						<img style="width: 50vw; min-width: 320px;" src="images/aggie.jpg"/>
+						</span>
+
+						<br/><br/><br/>
+
+                        <span class="wow fadeInUp">
+						<h3>2020 Mira Loma</h3>
+						<img style="width: 50vw; min-width: 320px;" src="images/miraloma2020.jpg"/>
+						</span>
+
+						<br/><br/><br/>
 
 						<span class="wow fadeInUp">
 						<h3>2019 NorCal State Tournament</h3>
@@ -108,6 +130,7 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/modules/wow.js"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://script.sheetsu.com/"></script>
 
 	<script type="text/javascript">
 

@@ -27,14 +27,15 @@
 	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
 
 	<style>
+	    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
 		.font-size {
-			font-size: calc(60px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+			font-size: 60px;
 		}
 
 		.font-size-big {
-			font-size: calc(80px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-			line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+			font-size: 100px;
 		}
 
 		button {
@@ -67,50 +68,29 @@
 			top: 2vh;
 			right: 1vw;
 		}
+		
+		@media only screen and (max-width: 600px) {
+		    
+		    .font-size {
+    			font-size: 25px;
+    		}
+    
+    		.font-size-big {
+    			font-size: 40px;
+    		}
+		    
+		}
 	</style>
 </head>
 
 <body>
 
-	<!--
-			<nav id="nav-bar" class="navbar navbar-expand-lg navbar-light 	yellow animated fadeInDown" style="z-index: 100; position: relative; text-color: black;">
-
-			  <a class="navbar-brand" style="font-size: 3vw; font-weight: bold;" href="index.php">Mountain View HS SciOly</a>
-
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			    <span class="navbar-toggler-icon"></span>
-			  </button>
-
-			  <div class="collapse navbar-collapse ml-3" id="navbarSupportedContent">
-			    <ul class="navbar-nav ml-auto">
-			      <li class="nav-item active" id="about">
-			        <a class="nav-link" href="index.php">About me<span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item dropdown" id="portfolio">
-			        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Portfolio
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-			          <a class="dropdown-item" href="#creations">Creations</a>
-			          <a class="dropdown-item" href="#volunteering">Volunteering</a>
-			          <a class="dropdown-item" href="#activities">Activities</a>
-			          <a class="dropdown-item" href="#work-experience">Work Experience</a>
-			        </div>
-			      </li>
-			      <li class="nav-item" id="contact">
-			        <a class="nav-link" href="contact.php">Contact Me<span class="sr-only">(current)</span></a>
-			      </li>
-			    </ul>
-			  </div>
-			</nav>
-			-->
 
 	<div class="mt-0 odd slow yellow">
 		<div class="container mt-3" style="padding-bottom: 10vh;">
 			<div class="panel text-center mt-2">
 				<div class="g-signin2 animated fadeInDown" id="google-btn" data-onsuccess="onSignIn"></div>
-				<h1 class="font-size animated fadeIn" style="font-weight: bold; margin-top: 3vh;">
+				<h1 class="font-size animated fadeIn" style="font-weight: bold; margin-top: 3vh; font-family: 'Josefin Sans';">
 					<strong>Mountain View High School
 						<br/>
 						<span class="font-size-big">Science Olympiad</span>
@@ -126,27 +106,24 @@
 						<span class="text-dark">About</span>
 					</button>
 				</a>
-				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'gallery.php'">
+				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'gallery'">
 					<span class="text-dark">Gallery</span>
 				</button>
-				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'mentors.php'">
-					<span class="text-dark">Mentors</span>
+				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'upcoming'">
+					<span class="text-dark">Upcoming</span>
 				</button>
-				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'alumni.php'">
+				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'alumni'">
 					<span class="text-dark">Alumni</span>
 				</button>
-				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'achievements.php'">
+				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'achievements'">
 					<span class="text-dark">Achievements</span>
 				</button>
-				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'contact.php'">
-					<span id="contact-btn" class="text-dark">Contact</span>
+				<button type="button" class="btn btn-yellow animated fadeInUp slow" onclick="location.href = 'contact'">
+					<span class="text-dark" id="contact-link">Info</span>
 				</button>
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="transition-gradient" style="width: 100vw; height: 10vh;">
-			</div>-->
 
 	<div class="mt-0 pb-3 odd wow fadeIn white" id="about">
 		<div class="container text-light" id="about-container">
@@ -157,7 +134,7 @@
 				<br>
 				<p class="wow fadeInUp">
 					<h2><strong>Who are we?</strong></h3>
-					<h5>The
+					<h5 align="justify">The
 						<strong>MVHS Science Olympiad club</strong> educates and inspires students in all STEM (science, technology, engineering, and
 						math) disciplines through hands-on activities and learning. The club includes team members that compete at the annual
 						Science Olympiad competition, the National Ocean Sciences Bowl, and also provides learning opportunities to explore
@@ -166,24 +143,21 @@
 					<br/>
 					<br/>
 					<h2><strong>What is Science Olympiad?</strong></h3>
-					<h5>
+					<h5 align="justify">
 						Science Olympiad teams function much like an athletic team, requiring preparation, commitment, coaching, and practice throughout
-						the year.
+						the year. Our team competes annually in the regional tournament and state tournament with plans to qualify for the national tournament. We also attend numerous invitationals as preparation. Each team is composed of up to 15 members. This year, the Santa Clara County Regional Science Olympiad tournament allows
+						up to 3 teams per high school.
 						<br/>
-						<br/>Our team competes annually in the regional tournament, with plans to continue to qualify for the state tournament,
-						and eventually, the national tournament. We also attend numerous invitationals as preparation.
 						<br/>
-						<br/>Each team is composed of up to 15 members. This year, the Santa Clara County Regional Science Olympiad tournament allows
-						up to 2 teams per high school.
-						<br/>
-						<br/>The tournaments are similar to track meets consisting of a series of 23 team events covering anatomy, chemistry, earth
+						The tournaments are similar to track meets consisting of a series of 23 team events covering anatomy, chemistry, earth
 						science, engineering, genetics, geology, mechanical engineering, physics, and technology. By combining events from
 						all disciplines, Science Olympiad encourages a wide cross-section of students to get involved. All subjects are based
 						on national Common Core standards. There is also a balance between events with requiring knowledge of science concepts,
 						process skills, and applications.
 						<br/>
-						<br/>Visit
-						<a target="_blank" href="https://www.soinc.org/">www.soinc.org</a> to learn more</h5>
+						<br/>
+					</h5>
+					<h5>Visit <a target="_blank" href="https://www.soinc.org/">www.soinc.org</a> to learn more</h5>
 				</p>
 			</div>
 		</div>
@@ -199,6 +173,7 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/modules/wow.js"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://script.sheetsu.com/"></script>
 
 	<script type="text/javascript">
 

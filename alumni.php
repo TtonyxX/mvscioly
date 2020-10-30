@@ -26,6 +26,7 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 	<style>
 		.font-size {
@@ -49,7 +50,6 @@
 		}
 	</style>
 
-	</style>
 </head>
 
 <body>
@@ -63,7 +63,19 @@
 					<strong>Alumni</strong>
 				</h1>
 				<h3>
-					Coral - UC Berkeley
+				    Nitin - MIT
+					<br>
+					<br> Nicole - UC Berkeley
+					<br>
+					<br> Noelle - UIUC
+					<br>
+					<br> Karina - UC San Diego
+					<br>
+					<br> Ash - University of Michigan
+					<br>
+					<br> Ben - Purdue
+					<br>
+				    <br> Coral - UC Berkeley
 					<br>
 					<br> Tejas - UC Berkeley
 					<br>
@@ -75,11 +87,13 @@
 					<br>
 					<br> Brandon - UCLA
 					<br>
+					<br> Rohan - UCSB
+					<br>
 					<br> Alex - University of Michigan
 					<br>
-					<br> Connory - Stanford
+					<br> Connery - Stanford
 					<br>
-					<br> Allen - Carlton
+					<br> Allen - Carleton
 					<br>
 					<br> Howard - UC Berkeley
 					<br>
@@ -120,6 +134,7 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/modules/wow.js"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://script.sheetsu.com/"></script>
 
 	<script type="text/javascript">
 

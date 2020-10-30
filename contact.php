@@ -3,7 +3,6 @@
 	include("getEmails.php");
 
 ?>
-
 <html lang="en" class="yellow">
 
 	<head>
@@ -15,8 +14,6 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="Keywords" content="Mountain View Highschool Science Olympiad, Scioly, Mountain View">
         <meta name="Description" content="The MVHS Science Olympiad club educates and inspires students in all STEM (science, technology, engineering, and math) disciplines through hands-on activities and learning.">
-	<meta name="google-signin-client_id" content="959383274677-o9c54q8dimqlpt5gng0ukpe9g16hc8p5.apps.googleusercontent.com">
-
 
 		<title>Mountain View High School Science Olympiad</title>
 
@@ -26,6 +23,7 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 		<style>
 			.font-size {
@@ -45,22 +43,49 @@
 				margin-top: 10vh;
 				padding-bottom: 10vh;
 			}
+			
+			#video {
+			    height: 515;
+			    width: 916;
+			}
+			
+			@media only screen and (max-width: 1000px) {
+              #video {
+                height: 215;
+                width: 80%;
+              }
+            }
 		</style>
 
-		</style>
 	</head>
 
 	<body>
 
 			<?php include("navbar.php") ?>
+			<pre id="content" style="white-space: pre-wrap;"></pre>
+			
+			<div class="mt-0 pb-3 animated fadeInUp fast white" id="contact-box">
+				<div class="container text-light" id="contact-container">
+					<div class="panel text-center">
+						<h1 class="font-size animated fadeIn" style="font-weight: bold; margin-top: 5vh;"><strong>Join</strong></h1>
 
-			<div class="mt-0 pb-3 animated fadeInUp fast white">
+						<h3>If you wish to join, fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLScay37NuwvVMk0VQMHycRQy70tCq6YR9939EnaJr7xbqNbj-A/viewform" target="_blank">form</a> and we'll get back to you as soon as possible.</h3>
+
+                        <br>
+                        <iframe id="video" src="https://www.youtube.com/embed/kJYq02K1dG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+					</div>
+				</div>
+			</div>
+			
+
+			<div class="mt-0 pb-3 animated fadeInUp fast white" id="contact-box">
 				<div class="container text-light" id="contact-container">
 					<div class="panel text-center">
 						<h1 class="font-size animated fadeIn" style="font-weight: bold; margin-top: 5vh;"><strong>Contact</strong></h1>
 
-						<h3>If you wish to join, contact either of the two presidents.</h3>
-						<h3>Presidents: <a target="_blank" href="mailto:nitinjan06@gmail.com">Nitin Kumar</a> & <a target="_blank" href="mailto:ytnicolexin@gmail.com">Nicole Xin</a></h3>
+						<h3>If you have any questions, contact either of the two presidents.</h3>
+						<h3>Presidents: <a target="_blank" href="mailto:yytonyxin@gmail.com">Tony Xin</a> & <a target="_blank" href="mailto:clee80302@gmail.com">Cassie Lee</a></h3>
 
 					</div>
 				</div>
@@ -69,8 +94,15 @@
 			<span id="empty"></span>
 			<br>
 			<br>
-
-	<!-- Bootstrap tooltips -->
+			
+			<!--<div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="http://tonyxin.com" target="_blank">tonyxin.com</a>
+            </div>-->
+            <div class="footer-copyright text-center py-3 footer" id="footer">Site developed by 
+                <a href="http://tonyxin.com" target="_blank" style="color: black;">Tony Xin</a>
+            </div>
+            
+            <!-- Bootstrap tooltips -->
 	<script type="text/javascript" src="js/popper.min.js"></script>
 	<!-- Bootstrap core JavaScript -->
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -79,8 +111,13 @@
 	<script type="text/javascript" src="js/mdb.min.js"></script>
 	<script type="text/javascript" src="js/modules/wow.js"></script>
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://script.sheetsu.com/"></script>
 
-	<script type="text/javascript">
+    <script async defer src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+    </script>
+    <script type="text/javascript">
 
 		$("#home").removeClass("active");
 		$("#contact").addClass("active");
